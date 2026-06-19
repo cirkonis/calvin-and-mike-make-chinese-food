@@ -121,7 +121,7 @@ export const gamePlan: GamePhase[] = [
       },
       {
         key: 'gp:pre:dry-coating',
-        who: 'Calvin',
+        who: 'Mike',
         task: 'Mix dry coating for the chicken',
         note: '250g cornstarch + 150g flour + 1 tsp baking powder. Cover and set aside.',
       },
@@ -136,14 +136,14 @@ export const gamePlan: GamePhase[] = [
   {
     id: '3-4-hours',
     title: '⏰ 3–4 Hours Before',
-    subtitle: 'All the chopping — this is the bulk of the labor',
+    subtitle: 'All the chopping',
     steps: [
       { key: 'gp:3h:cube-chicken', who: 'Mike', task: 'Cube chicken into ~3cm bite-size pieces' },
       { key: 'gp:3h:slice-beef', who: 'Calvin', task: 'Slice beef THINLY against the grain (~3mm slices)' },
-      { key: 'gp:3h:broccoli', who: 'Mike', task: 'Cut broccoli into florets' },
-      { key: 'gp:3h:peppers', who: 'Calvin', task: 'Cut bell peppers into large chunks (~4cm)' },
-      { key: 'gp:3h:onions', who: 'Mike', task: 'Cut onions into large chunks' },
-      { key: 'gp:3h:zucchini', who: 'Calvin', task: 'Cut zucchini into large chunks' },
+      { key: 'gp:3h:broccoli', who: 'Calvin', task: 'Cut broccoli into florets' },
+      { key: 'gp:3h:peppers', who: 'Mike', task: 'Cut bell peppers into large chunks (~4cm)' },
+      { key: 'gp:3h:onions', who: 'Calvin', task: 'Cut onions into large chunks' },
+      { key: 'gp:3h:zucchini', who: 'Mike', task: 'Cut zucchini into large chunks' },
     ],
   },
   {
