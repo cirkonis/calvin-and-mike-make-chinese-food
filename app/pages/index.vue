@@ -29,7 +29,7 @@ useHead({ title: 'Home' })
         <span class="text-4xl">🛒</span>
         <div>
           <div class="font-bold text-foreground group-hover:text-primary transition-colors">Shopping Mode</div>
-          <div class="text-xs text-muted-foreground mt-1">Everything you need to buy</div>
+          <div class="text-xs text-muted-foreground mt-1">Everything we need to buy</div>
         </div>
       </NuxtLink>
 
@@ -57,7 +57,7 @@ useHead({ title: 'Home' })
     </div>
 
     <div class="text-xs text-muted-foreground">
-      Checkboxes persist across devices — Mike and Calvin see the same state.
+      American People - French Booze - Chinese Food
     </div>
   </main>
 </template>

@@ -20,11 +20,11 @@ const checked = isChecked(props.cbKey)
     <button
       type="button"
       class="mt-0.5 shrink-0 size-6 rounded border-2 flex items-center justify-center transition-colors cursor-pointer"
-      :class="checked.value ? 'bg-primary border-primary' : 'border-border bg-background'"
+      :class="checked ? 'bg-primary border-primary' : 'border-border bg-background'"
       :aria-label="`Toggle: ${label}`"
       @click="toggle(cbKey)"
     >
-      <Check v-if="checked.value" class="size-3.5 text-primary-foreground" />
+      <Check v-if="checked" class="size-3.5 text-primary-foreground" />
     </button>
 
     <div class="min-w-0 flex-1 pt-0.5">
@@ -32,8 +32,8 @@ const checked = isChecked(props.cbKey)
         <span
           class="text-sm leading-snug"
           :class="[
-            checked.value ? 'line-through text-muted-foreground' : 'text-foreground',
-            emphasis && !checked.value ? 'font-semibold' : '',
+            checked ? 'line-through text-muted-foreground' : 'text-foreground',
+            emphasis && !checked ? 'font-semibold' : '',
           ]"
         >{{ label }}</span>
 

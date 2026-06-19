@@ -218,7 +218,7 @@ export const gamePlan: GamePhase[] = [
         task: 'Stove 2 — Stir fry beef in batches over HIGH heat, remove when just cooked',
       },
       {
-        key: 'gp:35:preheat-oven',
+        key: 'gp:35:stove3-reserve',
         who: 'Both',
         task: 'Stove 3 — Reserve for Kung Pao Stir fry',
       },
@@ -268,7 +268,9 @@ export const gamePlan: GamePhase[] = [
       {
         key: 'gp:20:kung-pao-sauce',
         who: 'Mike',
-        task: 'Add kung pao sauce + peanuts, toss everything together',
+        task: 'Add kung pao sauce, bring to a simmer, stir in the cornstarch slurry until glossy, then toss in the peanuts',
+        note: 'Mix the slurry (2 tsp cornstarch + 1 tbsp water) fresh — it settles if made ahead.',
+        recipeLink: { label: 'Kung Pao → Cooking', href: '/recipes#kung-pao-cooking' },
       },
       {
         key: 'gp:20:kung-pao-dish',
@@ -485,9 +487,11 @@ export const recipes: Recipe[] = [
           { key: 'r:kp:s:ginger', item: '1 tbsp fresh ginger, grated' },
           { key: 'r:kp:s:chilies', item: '4–6 dried red chilies (adjust for heat preference)' },
           { key: 'r:kp:s:msg', item: '1 tsp MSG' },
+          { key: 'r:kp:s:slurry', item: 'Cornstarch slurry: 2 tsp cornstarch + 1 tbsp cold water, mixed (keep separate until cooking)' },
         ],
         steps: [
-          { key: 'r:kp:s:s1', text: 'Combine all ingredients. Stir to dissolve sugar. Can be made ahead and refrigerated.' },
+          { key: 'r:kp:s:s1', text: 'Combine everything EXCEPT the slurry. Stir to dissolve sugar. Can be made ahead and refrigerated.' },
+          { key: 'r:kp:s:s2', text: 'Keep the slurry separate and mix it fresh right before cooking — cornstarch settles and clumps if it sits in the sauce.' },
         ],
       },
       {
@@ -504,7 +508,8 @@ export const recipes: Recipe[] = [
           { key: 'r:kp:cook:s2', text: 'Add peppers — stir fry 2 minutes.' },
           { key: 'r:kp:cook:s3', text: 'Add onions — 2 more minutes.' },
           { key: 'r:kp:cook:s4', text: 'Add zucchini — 1 more minute. Vegetables should have some char and still have bite.' },
-          { key: 'r:kp:cook:s5', text: 'Pour in sauce, toss everything together.' },
+          { key: 'r:kp:cook:s5', text: 'Pour in sauce and bring to a quick simmer.' },
+          { key: 'r:kp:cook:s5b', text: 'Stir the slurry again (it settles), pour it in, and toss 30–60 seconds until the sauce thickens and turns glossy and coats the vegetables.' },
           { key: 'r:kp:cook:s6', text: 'Add peanuts last, toss once, move to serving dish.' },
         ],
       },
